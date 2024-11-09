@@ -10,7 +10,7 @@ import requests
 
 # Initialize Flask app
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:prithivraj@localhost/traffic_data'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:prithivraj@localhost:5432/traffic_data'
 db = SQLAlchemy(app)
 
 # Initialize Dash app within Flask
