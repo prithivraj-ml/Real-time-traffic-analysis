@@ -138,6 +138,6 @@ def update_graph_and_predict(junction):
 if __name__ == '__main__':
     # Load CSV file within application context
     with app.app_context():
-        load_csv_to_db(r'C:\Users\prith\OneDrive\Desktop\traffic_analysis_project\data\traffic.csv')
+        load_csv_to_db(r'data/traffic.csv')
 
     app.run(debug=True)
