@@ -1,9 +1,13 @@
 Flask==3.0.3
 Flask-SQLAlchemy==3.1.1
-pandas==2.2.2
-numpy==1.26.4
-scikit-learn==1.5.2
-plotly==5.22.0
+gunicorn==23.0.0
+psycopg2-binary==2.9.10
 dash==2.18.2
+dash-bootstrap-components==1.6.0
+dash-core-components==2.0.0
+dash-html-components==2.0.0
+dash-table==5.0.0
+plotly==5.22.0
+pandas==2.2.2
 requests==2.31.0
-psycopg2-binary==2.9.10  # Required for PostgreSQL connection
+
