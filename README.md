@@ -7,62 +7,62 @@ This project focuses on analyzing pre-existing traffic data from four junctions 
 
 
 🎯 Objectives
-Data Analysis: Examine traffic data to identify patterns and trends.
-Prediction Modeling: Develop models to forecast traffic congestion.
-Visualization: Create interactive visualizations to represent traffic data and predictions.
+Data Analysis: Examine traffic data to identify patterns and trends.  
+Prediction Modeling: Develop models to forecast traffic congestion.  
+Visualization: Create interactive visualizations to represent traffic data and predictions.  
 
 
 🛠️ Technologies Used
-Programming Language: Python
-Data Analysis Libraries: Pandas, NumPy
-Visualization Tools: Matplotlib, Seaborn
-Machine Learning Libraries: Scikit-learn
-Development Environment: Jupyter Notebook
+Programming Language: Python  
+Data Analysis Libraries: Pandas, NumPy  
+Visualization Tools: Matplotlib, Seaborn  
+Machine Learning Libraries: Scikit-learn  
+Development Environment: Jupyter Notebook  
 
 
 🔍 Data Description
 The dataset comprises traffic information collected from four junctions. Key features include:
 
-timestamp: Date and time of data recording.
-junction_id: Identifier for each junction.
-vehicle_count: Number of vehicles recorded.
-weather_conditions: Weather during the recording.
-Data Source: [Link to dataset]
+timestamp: Date and time of data recording.  
+junction_id: Identifier for each junction.  
+vehicle_count: Number of vehicles recorded.  
+weather_conditions: Weather during the recording.  
+Data Source: https://www.kaggle.com/datasets/fedesoriano/traffic-prediction-dataset
 
 
 📊 Data Analysis
 Initial data analysis involved:
 
-Data Cleaning: Handling missing values and outliers.
-Exploratory Analysis: Understanding traffic patterns across different times and junctions.
-Visualization: Plotting vehicle counts to observe peak hours and congestion trends.
+Data Cleaning: Handling missing values and outliers.  
+Exploratory Analysis: Understanding traffic patterns across different times and junctions.  
+Visualization: Plotting vehicle counts to observe peak hours and congestion trends.  
 
 
 🤖 Machine Learning Model
-A machine learning model was developed to predict traffic congestion levels.
+A machine learning model was developed to predict traffic congestion levels.  
 
-Model Used: Random Forest Classifier
-Features: Vehicle count, time of day, weather conditions
-Target: Congestion level (High, Medium, Low)
+Model Used: Random Forest Classifier  
+Features: Vehicle count, time of day, weather conditions  
+Target: Congestion level (High, Medium, Low)  
 Model Performance:
 
-Accuracy: 85%
-Precision: 82%
-Recall: 80%
+Accuracy: 85%  
+Precision: 82%  
+Recall: 80%  
 
 
 📊 Confusion Matrix
 Below is the confusion matrix for our traffic congestion prediction model:
 
 Actual \ Predicted	High Congestion (1)	Low Congestion (0)
-High Congestion (1)	120 (TP)	15 (FN)
-Low Congestion (0)	20 (FP)	145 (TN)
+High Congestion (1)	    120 (TP)	            15 (FN)
+Low Congestion (0)	    20 (FP)	              145 (TN)
 
 We also visualized the confusion matrix using Matplotlib & Seaborn:
 
 python
 
-from sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay
+from sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay  
 import matplotlib.pyplot as plt
 
 # Generate confusion matrix
@@ -87,20 +87,21 @@ F1-Score	87.3%
 
 
 🚀 How to Run the Project
-Clone the Repository:
+#Clone the Repository:
 
 git clone https://github.com/prithivraj-ml/Real-time-traffic-analysis.git
+
 cd Real-time-traffic-analysis
 
-Install Dependencies:
+#Install Dependencies:
 
 pip install -r requirements.txt
 
-Run Data Preprocessing:
+#Run Data Preprocessing:
 
 python src/data_preprocessing.py
 
-Train the Model:
+#Train the Model:
 
 python src/model.py
 
